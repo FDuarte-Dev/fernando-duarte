@@ -1,10 +1,11 @@
 import React from 'react';
+import HeaderNavBar from '../../components/HeaderNavBar'
 
-export class HeaderManagerComp extends React.Component {
+class HeaderManagerComp extends React.Component {
 
     render() {
         return (
-            <h1>Hello Header Component!</h1>
+            <HeaderNavBar />
         )
     }
 }

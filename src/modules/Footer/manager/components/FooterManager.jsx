@@ -1,10 +1,11 @@
 import React from 'react';
+import FooterNavBar from '../../components/FooterNavBar'
 
-export class FooterManagerComp extends React.Component {
+class FooterManagerComp extends React.Component {
 
     render() {
         return (
-            <h1>Hello Footer Component!</h1>
+            <FooterNavBar />
         )
     }
 }
