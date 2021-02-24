@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/fernando-duarte/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/fernando-duarte/static/js/main.ae8954a8.chunk.js",
-    "main.js.map": "/fernando-duarte/static/js/main.ae8954a8.chunk.js.map",
-    "runtime-main.js": "/fernando-duarte/static/js/runtime-main.e635077f.js",
-    "runtime-main.js.map": "/fernando-duarte/static/js/runtime-main.e635077f.js.map",
-    "static/js/2.4f5a7144.chunk.js": "/fernando-duarte/static/js/2.4f5a7144.chunk.js",
-    "static/js/2.4f5a7144.chunk.js.map": "/fernando-duarte/static/js/2.4f5a7144.chunk.js.map",
-    "static/js/3.89216628.chunk.js": "/fernando-duarte/static/js/3.89216628.chunk.js",
-    "static/js/3.89216628.chunk.js.map": "/fernando-duarte/static/js/3.89216628.chunk.js.map",
+    "main.js": "/fernando-duarte/static/js/main.f8578acc.chunk.js",
+    "main.js.map": "/fernando-duarte/static/js/main.f8578acc.chunk.js.map",
+    "runtime-main.js": "/fernando-duarte/static/js/runtime-main.2001ab14.js",
+    "runtime-main.js.map": "/fernando-duarte/static/js/runtime-main.2001ab14.js.map",
+    "static/css/2.150d169a.chunk.css": "/fernando-duarte/static/css/2.150d169a.chunk.css",
+    "static/js/2.ea0914de.chunk.js": "/fernando-duarte/static/js/2.ea0914de.chunk.js",
+    "static/js/2.ea0914de.chunk.js.map": "/fernando-duarte/static/js/2.ea0914de.chunk.js.map",
+    "static/js/3.51143303.chunk.js": "/fernando-duarte/static/js/3.51143303.chunk.js",
+    "static/js/3.51143303.chunk.js.map": "/fernando-duarte/static/js/3.51143303.chunk.js.map",
     "index.html": "/fernando-duarte/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/fernando-duarte/static/css/2.150d169a.chunk.css.map",
     "static/css/main.8c8b27cf.chunk.css.map": "/fernando-duarte/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.4f5a7144.chunk.js.LICENSE.txt": "/fernando-duarte/static/js/2.4f5a7144.chunk.js.LICENSE.txt",
+    "static/js/2.ea0914de.chunk.js.LICENSE.txt": "/fernando-duarte/static/js/2.ea0914de.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/fernando-duarte/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e635077f.js",
-    "static/js/2.4f5a7144.chunk.js",
+    "static/js/runtime-main.2001ab14.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.ea0914de.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.ae8954a8.chunk.js"
+    "static/js/main.f8578acc.chunk.js"
   ]
 }
