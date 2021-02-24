@@ -1,0 +1,1 @@
+export { PageManager as default } from './components/PageManager';

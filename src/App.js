@@ -1,10 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import HeaderManager from './modules/Header/manager/index';
+import PageManager from './modules/Page/manager/index';
+import FooterManager from './modules/Footer/manager/index';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <HeaderManager />
+      <PageManager />
+      <FooterManager />
     </div>
   );
 }
