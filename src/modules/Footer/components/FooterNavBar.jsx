@@ -9,9 +9,9 @@ export default class FooterNavBar extends React.Component {
         return (
             <Navbar color="dark" dark fixed="bottom">
                 <Container>
-                    <Nav className="mr-auto">
+                    <Nav className="mr-auto" >
                         <Nav >FDuarte-Dev @ {new Date().getFullYear()}</Nav>
-                        <Nav>SocialIcons</Nav>
+                        <Nav>Social Icons</Nav>
                     </Nav>
                 </Container>
             </Navbar>

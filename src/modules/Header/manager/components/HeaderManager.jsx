@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import HeaderNavBar from '../../components/HeaderNavBar'
 
 class HeaderManagerComp extends React.Component {
@@ -10,4 +11,4 @@ class HeaderManagerComp extends React.Component {
     }
 }
 
-export const HeaderManager = HeaderManagerComp;
+export const HeaderManager = connect()(HeaderManagerComp);

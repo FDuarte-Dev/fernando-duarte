@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import FooterNavBar from '../../components/FooterNavBar'
 
 class FooterManagerComp extends React.Component {
@@ -10,4 +11,4 @@ class FooterManagerComp extends React.Component {
     }
 }
 
-export const FooterManager = FooterManagerComp;
+export const FooterManager = connect()(FooterManagerComp);
