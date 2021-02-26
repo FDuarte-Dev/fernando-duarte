@@ -1,26 +1,25 @@
 {
   "files": {
     "main.css": "/fernando-duarte/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/fernando-duarte/static/js/main.8913a79f.chunk.js",
-    "main.js.map": "/fernando-duarte/static/js/main.8913a79f.chunk.js.map",
-    "runtime-main.js": "/fernando-duarte/static/js/runtime-main.89295883.js",
-    "runtime-main.js.map": "/fernando-duarte/static/js/runtime-main.89295883.js.map",
+    "main.js": "/fernando-duarte/static/js/main.d5a0492c.chunk.js",
+    "main.js.map": "/fernando-duarte/static/js/main.d5a0492c.chunk.js.map",
+    "runtime-main.js": "/fernando-duarte/static/js/runtime-main.d62f19af.js",
+    "runtime-main.js.map": "/fernando-duarte/static/js/runtime-main.d62f19af.js.map",
     "static/css/2.150d169a.chunk.css": "/fernando-duarte/static/css/2.150d169a.chunk.css",
-    "static/js/2.f77fff63.chunk.js": "/fernando-duarte/static/js/2.f77fff63.chunk.js",
-    "static/js/2.f77fff63.chunk.js.map": "/fernando-duarte/static/js/2.f77fff63.chunk.js.map",
-    "static/js/3.2a6ecd8b.chunk.js": "/fernando-duarte/static/js/3.2a6ecd8b.chunk.js",
-    "static/js/3.2a6ecd8b.chunk.js.map": "/fernando-duarte/static/js/3.2a6ecd8b.chunk.js.map",
+    "static/js/2.5b7a5200.chunk.js": "/fernando-duarte/static/js/2.5b7a5200.chunk.js",
+    "static/js/2.5b7a5200.chunk.js.map": "/fernando-duarte/static/js/2.5b7a5200.chunk.js.map",
+    "static/js/3.91f6604f.chunk.js": "/fernando-duarte/static/js/3.91f6604f.chunk.js",
+    "static/js/3.91f6604f.chunk.js.map": "/fernando-duarte/static/js/3.91f6604f.chunk.js.map",
     "index.html": "/fernando-duarte/index.html",
     "static/css/2.150d169a.chunk.css.map": "/fernando-duarte/static/css/2.150d169a.chunk.css.map",
     "static/css/main.8c8b27cf.chunk.css.map": "/fernando-duarte/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.f77fff63.chunk.js.LICENSE.txt": "/fernando-duarte/static/js/2.f77fff63.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/fernando-duarte/static/media/logo.6ce24c58.svg"
+    "static/js/2.5b7a5200.chunk.js.LICENSE.txt": "/fernando-duarte/static/js/2.5b7a5200.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.89295883.js",
+    "static/js/runtime-main.d62f19af.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.f77fff63.chunk.js",
+    "static/js/2.5b7a5200.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.8913a79f.chunk.js"
+    "static/js/main.d5a0492c.chunk.js"
   ]
 }
