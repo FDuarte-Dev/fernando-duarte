@@ -1,5 +1,4 @@
 import React from 'react';
-import { isUndefined } from 'util';
 import { GitHubUser } from '../model/model';
 import { GitHubServices } from '../services/GitHubServices';
 
@@ -76,7 +75,7 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
             {!loading &&
                 <>
                     <h1>{user.login}</h1>
-                    <img src={user.avatar_url} alt='user'/>
+                    <img src={user.avatar_url} alt='user' />
                 </>
             }
             </>

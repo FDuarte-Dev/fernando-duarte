@@ -22,7 +22,7 @@ export interface GitHubUser {
     blog: string;
     location?: string;
     email?: string;
-    hireable?: string;
+    hireable?: boolean;
     bio?: string;
     twitter_username?: string;
     public_repos: number;
