@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import Nav from 'react-bootstrap/Nav';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default class FooterNavBar extends React.Component {
     render() {
@@ -11,7 +12,16 @@ export default class FooterNavBar extends React.Component {
                 <Container>
                     <Nav className="mr-auto" >
                         <Nav >FDuarte-Dev @ {new Date().getFullYear()}</Nav>
-                        <Nav>Social Icons</Nav>
+                        <Nav >
+                            <div>
+                                <a href="https://github.com/FDuarte-Dev">
+                                    <FontAwesomeIcon icon={faGithubSquare} size="2x" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/fernando-guerra-duarte/">
+                                    <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                                </a>
+                            </div>
+                        </Nav>
                     </Nav>
                 </Container>
             </Navbar>
