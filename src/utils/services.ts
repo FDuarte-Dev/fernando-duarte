@@ -4,10 +4,6 @@ export const ApiHttpClient = axios.create({
     baseURL: process.env.REACT_APP_HOST_WS_PATH,
     responseType: 'json'
 });
-export const ConsulHttpClient = axios.create({
-    baseURL: process.env.REACT_APP_CONSUL_PATH,
-    responseType: 'json'
-});
 
 ApiHttpClient.interceptors.response.use(
     (response: AxiosResponse) => {
@@ -19,7 +15,13 @@ ApiHttpClient.interceptors.response.use(
     }
 );
 
-ConsulHttpClient.interceptors.response.use(
+
+export const GitHubApiHttpClient = axios.create({
+    baseURL: 'https://api.github.com',
+    responseType: 'json'
+});
+
+GitHubApiHttpClient.interceptors.response.use(
     (response: AxiosResponse) => {
         return Promise.resolve(response);
     },
