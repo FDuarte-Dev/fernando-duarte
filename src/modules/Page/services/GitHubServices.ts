@@ -16,9 +16,9 @@ function getUser(username: any, callback: (arg: any, err: any) => void) {
     });
 }
 
-// https://api.github.com/users/USERNAME/projects
-function getUserProjects(username: string, callback: (arg: any, err: any) => void) {
-  GitHubApiHttpClient.get(`/users/${username}/projects`)
+// https://api.github.com/users/USERNAME/repos
+function getUserRepositories(username: string, callback: (arg: any, err: any) => void) {
+  GitHubApiHttpClient.get(`/users/${username}/repos`)
   .then((response: AxiosResponse) => {
     if (callback) {
       callback(response, null);
@@ -33,5 +33,5 @@ function getUserProjects(username: string, callback: (arg: any, err: any) => voi
 
 export const GitHubServices = {
     getUser: getUser,
-    getUserProjects: getUserProjects
+    getUserRepositories: getUserRepositories
 }
