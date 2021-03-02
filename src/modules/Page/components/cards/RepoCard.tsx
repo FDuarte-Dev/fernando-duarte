@@ -3,6 +3,8 @@ import { GitHubServices } from '../../services/GitHubServices';
 
 interface RepoCardProps {
     full_name: string;
+    name: string;
+    description: string;
 }
 
 interface RepoCardState {
@@ -17,9 +19,9 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
     constructor(props: RepoCardProps) {
         super(props);
         this.state = {
-            name: '',
+            name: this.props.name,
             languages: [],
-            description: '',
+            description: this.props.description,
             loading: true
         }
     }
@@ -48,7 +50,8 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
             }
             {!loading &&
                 <>
-                    <h3>name: {name} | description: {description}</h3>
+                    <h3>name: {name}</h3>
+                    <h4>description: {description}</h4>
                     <h5>language{languages.length > 1 ? 's' : '' }: {languages.join(', ')}</h5>
                     <h3>----------------------------------------</h3>
                 </>

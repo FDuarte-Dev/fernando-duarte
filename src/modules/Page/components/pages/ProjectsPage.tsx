@@ -43,8 +43,8 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
                 <>
                     <h1>Number of repos: {repos.length}</h1>
                     <div>
-                        {repos.map(({full_name}) => {
-                            return <RepoCard full_name={full_name}/>
+                        {repos.map(({full_name, name, description}) => {
+                            return <RepoCard full_name={full_name} name={name} description={description}/>
                         })}
                     </div>
                 </>
