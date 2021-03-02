@@ -31,7 +31,23 @@ function getUserRepositories(username: string, callback: (arg: any, err: any) =>
   })
 }
 
+// https://api.github.com/repos/FDuarte-Dev/fernando-duarte/languages
+function getRepoLanguages(fullName: string, callback: (arg: any, err: any) => void) {
+  GitHubApiHttpClient.get(`/repos/${fullName}/languages`)
+  .then((response: AxiosResponse) => {
+    if (callback) {
+      callback(response, null);
+    }
+  })
+  .catch((error: AxiosError) => {
+    if (callback) {
+      callback(null, error);
+    }
+  })
+}
+
 export const GitHubServices = {
-    getUser: getUser,
-    getUserRepositories: getUserRepositories
+    getUser,
+    getUserRepositories,
+    getRepoLanguages
 }

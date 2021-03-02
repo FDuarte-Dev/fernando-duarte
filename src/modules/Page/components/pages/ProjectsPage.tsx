@@ -1,6 +1,7 @@
 import React from 'react';
-import { GitHubRepo } from '../model/model';
-import { GitHubServices } from '../services/GitHubServices';
+import RepoCard from '../cards/RepoCard';
+import { GitHubRepo } from '../../model/model';
+import { GitHubServices } from '../../services/GitHubServices';
 
 interface ProjectsPageProps {
 
@@ -36,11 +37,16 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
         return (
             <>
             {loading && 
-                <h1>Loading Home Page Component</h1>
+                <h1>Loading Project Page Component</h1>
             }
             {!loading &&
                 <>
                     <h1>Number of repos: {repos.length}</h1>
+                    <div>
+                        {repos.map(({full_name}) => {
+                            return <RepoCard full_name={full_name}/>
+                        })}
+                    </div>
                 </>
             }
             </>

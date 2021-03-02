@@ -1,6 +1,6 @@
 import React from 'react';
-import { GitHubUser } from '../model/model';
-import { GitHubServices } from '../services/GitHubServices';
+import { GitHubUser } from '../../model/model';
+import { GitHubServices } from '../../services/GitHubServices';
 
 interface HomePageProps {
 
