@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { GitHubServices } from '../../services/GitHubServices';
+import LoadingCard from './LoadingCard';
 
 interface RepoCardProps {
     full_name: string;
@@ -49,9 +50,7 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
         let { name, languages, description, html_url, loading } = this.state;
         return (
             <>
-            {loading && 
-                <h1>Loading Card</h1>
-            }
+            {loading && <LoadingCard />}
             {!loading &&
                 <Card style={{flex: 1, width: '80%'}}>
                     <Card.Body>
