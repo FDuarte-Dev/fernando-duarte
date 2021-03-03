@@ -1,16 +1,19 @@
 import React from 'react';
+import { Button, Card } from 'react-bootstrap';
 import { GitHubServices } from '../../services/GitHubServices';
 
 interface RepoCardProps {
     full_name: string;
     name: string;
     description: string;
+    html_url: string;
 }
 
 interface RepoCardState {
     name: string;
     languages: any[];
     description: string;
+    html_url: string;
     loading: boolean;
 }
 
@@ -22,6 +25,7 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
             name: this.props.name,
             languages: [],
             description: this.props.description,
+            html_url: this.props.html_url,
             loading: true
         }
     }
@@ -42,19 +46,21 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
     
 
     render() {
-        let { name, languages, description, loading } = this.state;
+        let { name, languages, description, html_url, loading } = this.state;
         return (
             <>
             {loading && 
                 <h1>Loading Card</h1>
             }
             {!loading &&
-                <>
-                    <h3>name: {name}</h3>
-                    <h4>description: {description}</h4>
-                    <h5>language{languages.length > 1 ? 's' : '' }: {languages.join(', ')}</h5>
-                    <h3>----------------------------------------</h3>
-                </>
+                <Card style={{flex: 1, width: '80%'}}>
+                    <Card.Body>
+                        <Card.Title>{name}</Card.Title>
+                        <Card.Text>{description}</Card.Text>
+                        <Card.Text>{languages.join(', ')}</Card.Text>
+                        <Button variant="primary" href={html_url}>Visit</Button>
+                    </Card.Body>
+                </Card>
             }  
             </>
         );

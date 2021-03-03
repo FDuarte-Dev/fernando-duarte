@@ -2,6 +2,7 @@ import React from 'react';
 import RepoCard from '../cards/RepoCard';
 import { GitHubRepo } from '../../model/model';
 import { GitHubServices } from '../../services/GitHubServices';
+import { CardColumns, CardDeck } from 'react-bootstrap';
 
 interface ProjectsPageProps {
 
@@ -41,12 +42,11 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
             }
             {!loading &&
                 <>
-                    <h1>Number of repos: {repos.length}</h1>
-                    <div>
-                        {repos.map(({full_name, name, description}) => {
-                            return <RepoCard full_name={full_name} name={name} description={description}/>
+                    <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                        {repos.map(({full_name, name, description, html_url}) => {
+                            return <RepoCard full_name={full_name} name={name} description={description} html_url={html_url}/>
                         })}
-                    </div>
+                    </CardDeck>
                 </>
             }
             </>
