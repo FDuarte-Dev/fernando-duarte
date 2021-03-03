@@ -1,4 +1,5 @@
 import React from 'react';
+import { GITHUB_USERNAME } from '../../../../utils/constants';
 import { GitHubUser } from '../../model/model';
 import { GitHubServices } from '../../services/GitHubServices';
 import LoadingPage from './LoadingPage';
@@ -26,7 +27,7 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
     }
 
     componentDidMount() {
-        const USERNAME = 'FDuarte-Dev';
+        const USERNAME = GITHUB_USERNAME;
 
         GitHubServices.getUser(USERNAME, (res: any, err:any) => {
             if (res && res.status === 200) {

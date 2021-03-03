@@ -1,4 +1,5 @@
 import React from 'react';
+import { GITHUB_USERNAME } from '../../../../utils/constants';
 import RepoCard from '../cards/RepoCard';
 import { GitHubRepo } from '../../model/model';
 import { GitHubServices } from '../../services/GitHubServices';
@@ -24,7 +25,7 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
     }
 
     componentDidMount() {
-        const USERNAME = 'FDuarte-Dev';
+        const USERNAME = GITHUB_USERNAME;
 
         GitHubServices.getUserRepositories(USERNAME, (res: any, err: any) => {
             if (res && res.status === 200) {

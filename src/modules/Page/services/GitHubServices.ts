@@ -1,7 +1,6 @@
 import { AxiosResponse, AxiosError } from 'axios';
 import { GitHubApiHttpClient } from '../../../utils/services';
 
-// https://api.github.com/users/USERNAME
 function getUser(username: any, callback: (arg: any, err: any) => void) {
   GitHubApiHttpClient.get(`/users/${username}`)
     .then((response: AxiosResponse) => {
@@ -16,7 +15,6 @@ function getUser(username: any, callback: (arg: any, err: any) => void) {
     });
 }
 
-// https://api.github.com/users/USERNAME/repos
 function getUserRepositories(username: string, callback: (arg: any, err: any) => void) {
   GitHubApiHttpClient.get(`/users/${username}/repos`)
   .then((response: AxiosResponse) => {
@@ -31,7 +29,6 @@ function getUserRepositories(username: string, callback: (arg: any, err: any) =>
   })
 }
 
-// https://api.github.com/repos/FDuarte-Dev/fernando-duarte/languages
 function getRepoLanguages(fullName: string, callback: (arg: any, err: any) => void) {
   GitHubApiHttpClient.get(`/repos/${fullName}/languages`)
   .then((response: AxiosResponse) => {
