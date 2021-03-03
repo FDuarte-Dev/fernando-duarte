@@ -1,6 +1,7 @@
 import React from 'react';
 import { GitHubUser } from '../../model/model';
 import { GitHubServices } from '../../services/GitHubServices';
+import LoadingPage from './LoadingPage';
 
 interface HomePageProps {
 
@@ -39,9 +40,7 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
         let { user, loading } = this.state;
         return (
             <>
-            {loading && 
-                <h1>Loading Home Page Component</h1>
-            }
+            {loading && <LoadingPage />}
             {!loading &&
                 <>
                     <h1>{user.login}</h1>

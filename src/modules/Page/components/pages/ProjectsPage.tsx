@@ -2,7 +2,8 @@ import React from 'react';
 import RepoCard from '../cards/RepoCard';
 import { GitHubRepo } from '../../model/model';
 import { GitHubServices } from '../../services/GitHubServices';
-import { CardColumns, CardDeck } from 'react-bootstrap';
+import { CardDeck } from 'react-bootstrap';
+import LoadingPage from './LoadingPage';
 
 interface ProjectsPageProps {
 
@@ -37,9 +38,7 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
         let {repos, loading} = this.state;
         return (
             <>
-            {loading && 
-                <h1>Loading Project Page Component</h1>
-            }
+            {loading && <LoadingPage />}
             {!loading &&
                 <>
                     <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
