@@ -1,20 +1,15 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { GitHubServices } from '../../services/GitHubServices';
+import { GitHubRepo } from '../../model/model';
 import LoadingCard from './LoadingCard';
 
 interface RepoCardProps {
-    full_name: string;
-    name: string;
-    description: string;
-    html_url: string;
+    repository: GitHubRepo
 }
 
 interface RepoCardState {
-    name: string;
     languages: any[];
-    description: string;
-    html_url: string;
     loading: boolean;
 }
 
@@ -23,17 +18,14 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
     constructor(props: RepoCardProps) {
         super(props);
         this.state = {
-            name: this.props.name,
             languages: [],
-            description: this.props.description,
-            html_url: this.props.html_url,
             loading: true
         }
     }
 
     componentDidMount() {
 
-        GitHubServices.getRepoLanguages(this.props.full_name, (res: any, err: any) => {
+        GitHubServices.getRepoLanguages(this.props.repository.full_name, (res: any, err: any) => {
             if (res && res.status === 200) { 
                 let langs = []
                 for(var lang in res.data){
@@ -47,7 +39,8 @@ export default class RepoCard extends React.Component<RepoCardProps, RepoCardSta
     
 
     render() {
-        let { name, languages, description, html_url, loading } = this.state;
+        let { languages, loading } = this.state;
+        let { name, description, html_url } = this.props.repository;
         return (
             <>
             {loading && <LoadingCard />}

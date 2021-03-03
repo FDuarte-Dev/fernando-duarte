@@ -43,8 +43,8 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
             {!loading &&
                 <>
                     <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                        {repos.map(({full_name, name, description, html_url}) => {
-                            return <RepoCard full_name={full_name} name={name} description={description} html_url={html_url}/>
+                        {repos.map((repo) => {
+                            return <RepoCard repository={repo}/>
                         })}
                     </CardDeck>
                 </>
