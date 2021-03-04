@@ -12,3 +12,10 @@ export interface GitHubRepo {
     updated_at: string;
     language: string;
 }
+
+export interface Application {
+    icon: string;
+    name: string;
+    description: string;
+    html_url: string;
+}

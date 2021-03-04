@@ -2,33 +2,34 @@ import React from 'react';
 import LoadingPage from './LoadingPage';
 import { CardDeck } from 'react-bootstrap';
 import ApplicationCard from '../cards/ApplicationCard';
+import { Application } from '../../model/model';
+import { APPS } from '../../../../utils/applicationsList';
 
 interface ApplicationsPageProps {
 
 }
 
 interface ApplicationsPageState {
-    
-    loading: boolean;
+    applications: Application[];
 }
 
 export default class ApplicationsPage extends React.Component<ApplicationsPageProps, ApplicationsPageState> {
     constructor(props: ApplicationsPageProps) {
         super(props);
         this.state = {
-            loading: true
+            applications: APPS
         }
     }
 
     render() {
+        let { applications } = this.state;
         return (
             <>
                 <h1>Applications</h1>
                 <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                    {/* {repos.map(({full_name, name, description, html_url}) => {
-                        return <RepoCard full_name={full_name} name={name} description={description} html_url={html_url}/>
-                    })} */}
-                    <ApplicationCard />
+                    {applications.map((application) => {
+                        return <ApplicationCard application={application}/>
+                    })}
                 </CardDeck>
             </>
         );
