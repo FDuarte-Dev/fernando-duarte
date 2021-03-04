@@ -8,7 +8,7 @@ import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default class FooterNavBar extends React.Component {
     render() {
         return (
-            <Navbar color="dark" dark fixed="bottom">
+            <Navbar color="dark" fixed="bottom">
                 <Container>
                     <Nav className="mr-auto" >
                         <Nav >FDuarte-Dev @ {new Date().getFullYear()}</Nav>
