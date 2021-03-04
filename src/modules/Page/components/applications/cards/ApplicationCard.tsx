@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { Application } from '../../model/model';
+import { Application } from '../models/model';
 
 interface ApplicationCardProps{
     application: Application

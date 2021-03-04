@@ -1,10 +1,10 @@
 import React from 'react';
-import { GITHUB_USERNAME } from '../../../../utils/constants';
+import { GITHUB_USERNAME } from '../../../../../utils/constants';
 import RepoCard from '../cards/RepoCard';
-import { GitHubRepo } from '../../model/model';
-import { GitHubServices } from '../../services/GitHubServices';
+import { GitHubRepo } from '../models/model';
+import { GitHubServices } from '../services/GitHubServices';
 import { CardDeck } from 'react-bootstrap';
-import LoadingPage from './LoadingPage';
+import LoadingPage from '../../loading/pages/LoadingPage';
 
 interface ProjectsPageProps {
 

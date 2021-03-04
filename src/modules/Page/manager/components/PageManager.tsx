@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { State } from '../../../../redux/reducer';
-import HomePage from '../../components/pages/HomePage';
-import AcademicPage from '../../components/pages/AcademicPage';
-import WorkExperiencePage from '../../components/pages/WorkExperiencePage';
-import ProjectsPage from '../../components/pages/ProjectsPage';
-import ApplicationsPage from '../../components/pages/ApplicationsPage';
-import ContactsPage from '../../components/pages/ContactsPage';
-import NotFoundPage from '../../components/pages/NotFoundPage';
+import HomePage from '../../components/home/pages/HomePage';
+import AcademicPage from '../../components/academic/pages/AcademicPage';
+import WorkExperiencePage from '../../components/workexperience/pages/WorkExperiencePage';
+import ProjectsPage from '../../components/projects/pages/ProjectsPage';
+import ApplicationsPage from '../../components/applications/pages/ApplicationsPage';
+import ContactsPage from '../../components/contacts/pages/ContactsPage';
+import NotFoundPage from '../../components/notfound/pages/NotFoundPage';
 
 interface PageManagerProps {
     page: string

@@ -1,7 +1,7 @@
-import { Application } from '../modules/Page/model/model';
+import { Application } from '../models/model';
 import { CALCULADORA_VOCAL_ICON, 
          DECISION_MAKER_ICON, 
-         MORSE_TRANSLATOR_ICON } from './constants';
+         MORSE_TRANSLATOR_ICON } from '../../../../../utils/constants';
 
 export const APPS: Application[] = [
     {

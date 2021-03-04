@@ -1,9 +1,8 @@
 import React from 'react';
-import LoadingPage from './LoadingPage';
 import { CardDeck } from 'react-bootstrap';
 import ApplicationCard from '../cards/ApplicationCard';
-import { Application } from '../../model/model';
-import { APPS } from '../../../../utils/applicationsList';
+import { Application } from '../models/model';
+import { APPS } from '../items/applicationsList';
 
 interface ApplicationsPageProps {
 

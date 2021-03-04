@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { GitHubServices } from '../../services/GitHubServices';
-import { GitHubRepo } from '../../model/model';
-import LoadingCard from './LoadingCard';
+import { GitHubServices } from '../services/GitHubServices';
+import { GitHubRepo } from '../models/model';
+import LoadingCard from '../../loading/cards/LoadingCard';
 
 interface RepoCardProps {
     repository: GitHubRepo

@@ -1,8 +1,8 @@
 import React from 'react';
-import { GITHUB_USERNAME } from '../../../../utils/constants';
-import { GitHubUser } from '../../model/model';
-import { GitHubServices } from '../../services/GitHubServices';
-import LoadingPage from './LoadingPage';
+import { GITHUB_USERNAME } from '../../../../../utils/constants';
+import { GitHubUser } from '../models/model';
+import { GitHubServices } from '../services/GitHubServices';
+import LoadingPage from '../../loading/pages/LoadingPage';
 
 interface HomePageProps {
 
