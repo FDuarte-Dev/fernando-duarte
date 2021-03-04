@@ -24,7 +24,6 @@ export default class ApplicationsPage extends React.Component<ApplicationsPagePr
         let { applications } = this.state;
         return (
             <>
-                <h1>Applications</h1>
                 <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                     {applications.map((application) => {
                         return <ApplicationCard application={application}/>
