@@ -11,7 +11,7 @@ export interface Degree {
 export interface Discipline {
     name: string;
     ects: number;
-    projects: Project[];
+    projects?: Project[];
 }
 
 export interface Project {
