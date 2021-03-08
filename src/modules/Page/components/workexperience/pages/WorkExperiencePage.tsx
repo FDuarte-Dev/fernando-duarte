@@ -1,9 +1,33 @@
 import React from 'react';
+import { CardDeck } from 'react-bootstrap';
+import WorkExperienceCard from '../cards/WorkExperienceCard';
+import { WORKS } from '../items/workList';
+import { Work } from '../models/models';
 
-export default class WorkExperiencePage extends React.Component {
+interface WorkExperiencePageProps {}
+
+interface WorkExperiencePageState {
+    works: Work[];
+}
+
+export default class WorkExperiencePage extends React.Component<WorkExperiencePageProps, WorkExperiencePageState> {
+    constructor(props: WorkExperiencePageProps) {
+        super(props);
+        this.state = {
+            works: WORKS
+        }
+    }
+
     render() {
+        let { works } = this.state;
         return (
-            <h1>Work Experience Page Component</h1>
+            <>
+                <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    {works.map((work) => {
+                        return <WorkExperienceCard work={work}/>
+                    })}
+                </CardDeck>
+            </>
         );
     }
 }
