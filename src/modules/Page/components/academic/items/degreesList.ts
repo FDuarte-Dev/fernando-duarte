@@ -7,8 +7,8 @@ export const ACADEMIC: Degree[] = [
         institution: 'Instituto Superior Técnico',
         location: 'Lisbon - Portugal',
         level: EducationLevelEnum.BACHELOR,
-        startDate: new Date('2014-09-09').toLocaleDateString(),
-        endDate: new Date('2018-07-10').toLocaleDateString(),
+        start_date: new Date('2014-09-09').toLocaleDateString(),
+        end_date: new Date('2018-07-10').toLocaleDateString(),
         curriculum: [
             disciplines.FP,
             disciplines.IAC,

@@ -17,8 +17,8 @@ export default class DegreeCard extends React.Component<DegreeCardProps, DegreeC
             level,
             institution,
             location,
-            startDate,
-            endDate,
+            start_date,
+            end_date,
             curriculum,
         } = this.props.degree;
         return (
@@ -32,7 +32,7 @@ export default class DegreeCard extends React.Component<DegreeCardProps, DegreeC
                             {institution} | {location}
                         </Card.Text>
                         <Card.Text>
-                            {startDate} - {endDate}
+                            {start_date} - {end_date}
                         </Card.Text>
                         <CurriculumModal curriculum={curriculum} />
                     </Card.Body>
