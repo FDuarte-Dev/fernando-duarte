@@ -16,7 +16,7 @@ export const FP: Discipline = {
 }
 
 export const IAC: Discipline = {
-    name: 'Introdução à Arquitectura de Computadores.',
+    name: 'Introdução à Arquitectura de Computadores',
     ects: 7.5,
     projects: [
         {
