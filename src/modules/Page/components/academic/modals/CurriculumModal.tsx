@@ -22,7 +22,7 @@ export const CurriculumModal: React.FC<CurriculumModalProps> = (props) => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Curriculum</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>

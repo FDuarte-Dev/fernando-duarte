@@ -17,12 +17,14 @@ export const ProjectsModal: React.FC<ProjectsModalProps> = (props) => {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Projects
+      Project{props.projects.length > 1 ? 's' : ''}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>
+            Project{props.projects.length > 1 ? 's' : ''}
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <CardDeck>
