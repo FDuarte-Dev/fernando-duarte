@@ -1,6 +1,7 @@
 import React from "react";
-import { Button, Card, Modal } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Degree } from "../models/model";
+import { CurriculumModal } from "../modals/CurriculumModal";
 
 interface DegreeCardProps {
     degree: Degree;
@@ -33,9 +34,7 @@ export default class DegreeCard extends React.Component<DegreeCardProps, DegreeC
                         <Card.Text>
                             {startDate} - {endDate}
                         </Card.Text>
-                        <Button variant="primary" onClick={() => {}}>
-                            Curriculum
-                        </Button>
+                        <CurriculumModal curriculum={curriculum} />
                     </Card.Body>
                 </Card>
             </>
