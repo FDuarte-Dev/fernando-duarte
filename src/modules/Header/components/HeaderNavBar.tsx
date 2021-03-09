@@ -12,7 +12,7 @@ export default class HeaderNavBar extends React.Component {
     render() {
         return (
             <Navbar bg="light" expand="lg" >
-            <Navbar.Brand href="#home">Fernando Duarte</Navbar.Brand>
+            <Navbar.Brand onClick={this.changePage('home')}>Fernando Duarte</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
