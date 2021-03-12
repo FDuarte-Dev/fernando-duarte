@@ -6,7 +6,6 @@ import AcademicPage from '../../components/academic/pages/AcademicPage';
 import WorkExperiencePage from '../../components/workexperience/pages/WorkExperiencePage';
 import ProjectsPage from '../../components/projects/pages/ProjectsPage';
 import ApplicationsPage from '../../components/applications/pages/ApplicationsPage';
-import ContactsPage from '../../components/contacts/pages/ContactsPage';
 import NotFoundPage from '../../components/notfound/pages/NotFoundPage';
 
 interface PageManagerProps {
@@ -34,8 +33,6 @@ class PageManagerComp extends React.Component<PageManagerProps> {
                 return ProjectsPage;
             case 'applications':
                 return ApplicationsPage;
-            case 'contacts':
-                return ContactsPage;
             default:
                 return NotFoundPage;
         }

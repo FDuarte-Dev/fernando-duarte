@@ -21,7 +21,6 @@ export default class HeaderNavBar extends React.Component {
                 <Nav.Link onClick={this.changePage('work-experience')}>Work Experience</Nav.Link>
                 <Nav.Link onClick={this.changePage('projects')}>Projects</Nav.Link>
                 <Nav.Link onClick={this.changePage('applications')}>Applications</Nav.Link>
-                <Nav.Link onClick={this.changePage('contacts')}>Contacts</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
