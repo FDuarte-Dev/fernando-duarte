@@ -37,14 +37,18 @@ export const WORKS: Work[] = [
             'Java',
             'TypeScript',
             'Javascript',
-            'Spring Boot',
-            'WIP...'
+            'Spring',
+            'OpenAPI',
+            'React',
+            'Redux',
+            'Apache CouchDB',
+            'JointJs'
         ],
         notable_tasks: [
-            'Developed a Java to XSL bean translator',
-            'Implemented a REST API for NLP',
-            'Developed a diagram visualization tool using JointJs',
-            'WIP...'
+            'XSL bean generator from Java project',
+            'REST API development and documentation for various business processes',
+            'Provider model generation to React components',
+            'Developed Rappid diagram visualization tool for React applications'
         ]
     }
 ];

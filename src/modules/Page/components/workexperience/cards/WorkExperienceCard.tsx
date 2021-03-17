@@ -22,11 +22,19 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             technologies } = this.props.work;
         return (
             <>
-                <Card style={{flex: 1, width: '80%'}}>
+                <Card border='info' style={{flex: 1, width: '80%'}}>
+                    <Card.Header>
+                        <h3>
+                            {title} @ {company_name}
+                        </h3>
+                        <h5>
+                            {location}
+                        </h5>
+                        <h6>
+                            {start_date} - {end_date || 'Ongoing'}
+                        </h6>
+                    </Card.Header>
                     <Card.Body>
-                        <Card.Title>{title} @ {company_name}</Card.Title>
-                        <Card.Text>{location}</Card.Text>
-                        <Card.Text>{start_date} - {end_date || 'Ongoing'}</Card.Text>
                         <Card.Text>{technologies.join(', ')}</Card.Text>
                         {notable_tasks.map((task) => {
                             return <Card.Text>-{task}</Card.Text>
