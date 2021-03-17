@@ -46,9 +46,11 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
                 <>
                     <img src={user.avatar_url} alt='user' />
                     <h3>Welcome to my page!</h3>
-                    My name is Fernando Duarte and I'm a Software Developer from Portugal.
-                    In this webpage you can find a small overview of my progresses in the field, from my studies to my work experiences.
-                    Feel free to explore further, and to hit me up with the provided contacts.
+                    My name is Fernando Duarte and I'm a Software Developer from Portugal. 
+                    <br></br>
+                    In this webpage you can find a small overview of my progresses in the world of programming.
+                    <br></br>
+                    Feel free to explore further, and to hit me up using any of the contacts below.
                 </>
             }
             </>
