@@ -19,7 +19,6 @@ export default class FooterNavBar extends React.Component {
                             <div>
                                 <a href="mailto:fernando.guerra.duarte@gmail.com">
                                     <FontAwesomeIcon icon={faEnvelope} size="2x" />
-                                    fernando.guerra.duarte@gmail.com
                                 </a>
                                 <a href="https://github.com/FDuarte-Dev">
                                     <FontAwesomeIcon icon={faGithubSquare} size="2x" />
