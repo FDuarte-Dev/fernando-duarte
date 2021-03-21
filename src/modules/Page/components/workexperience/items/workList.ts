@@ -1,11 +1,12 @@
 import moment from 'moment';
 
 import { Work } from "../models/models";
+import { COLLAB_LOGO , MORPHIS_LOGO } from '../../../../../utils/constants';
 
 export const WORKS: Work[] = [
     {
         company_name: 'Collab S.A.',
-        company_logo: '',
+        company_logo: COLLAB_LOGO,
         location: 'Lisbon, Portugal',
         title: 'Software Engineer',
         start_date: moment(new Date(2018, 7)).format("MMM YYYY"),
@@ -29,7 +30,7 @@ export const WORKS: Work[] = [
     },
     {
         company_name: 'Morphis Technologies',
-        company_logo: '',
+        company_logo: MORPHIS_LOGO,
         location: 'Lisbon, Portugal',
         title: 'Software Developer',
         start_date: moment(new Date(2020, 9)).format('MMM YYYY'),

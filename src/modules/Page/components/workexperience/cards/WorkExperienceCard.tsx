@@ -24,6 +24,7 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             <>
                 <Card border='info' style={{flex: 1, width: '80%'}}>
                     <Card.Header>
+                    <Card.Img variant="top" src={company_logo} />
                         <h3>
                             {title} @ {company_name}
                         </h3>
@@ -39,7 +40,6 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                         {notable_tasks.map((task) => {
                             return <Card.Text>-{task}</Card.Text>
                         })}
-                        <Card.Img variant="top" src={company_logo} />
                     </Card.Body>
                 </Card>
             </>
