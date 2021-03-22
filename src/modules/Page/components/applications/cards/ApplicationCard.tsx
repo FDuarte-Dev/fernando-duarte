@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Application } from '../models/model';
+import { PLAY_STORE_BUTTON } from '../../../../../utils/constants';
 
 interface ApplicationCardProps{
     application: Application
@@ -16,10 +17,15 @@ export default class ApplicationCard extends React.Component<ApplicationCardProp
             <>
                 <Card style={{flex: 1, width: '80%'}}>
                     <Card.Body>
-                        <Card.Title>{name}</Card.Title>
+                        
+                        <Card.Title>
+                        <Card.Img variant="top" src={icon} style={{width: '20%'}}/>
+                            {name}
+                        </Card.Title>
                         <Card.Text>{description}</Card.Text>
-                        <Card.Img variant="top" src={icon} />
-                        <Button variant="primary" href={html_url}>Visit</Button>
+                        <Button variant="link" href={html_url} >
+                            <img src={PLAY_STORE_BUTTON} alt="Play" style={{width: '20%'}}></img>
+                        </Button>
                     </Card.Body>
                 </Card>
             </>
