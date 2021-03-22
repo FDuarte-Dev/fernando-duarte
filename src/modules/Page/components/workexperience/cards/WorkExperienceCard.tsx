@@ -24,7 +24,7 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             <>
                 <Card border='info' style={{flex: 1, width: '80%'}}>
                     <Card.Header>
-                    <Card.Img variant="top" src={company_logo} />
+                    <Card.Img variant="top" src={company_logo} style={{width: '20%'}}/>
                         <h3>
                             {title} @ {company_name}
                         </h3>
