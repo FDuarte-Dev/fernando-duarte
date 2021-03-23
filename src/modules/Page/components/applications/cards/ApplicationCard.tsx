@@ -16,18 +16,18 @@ export default class ApplicationCard extends React.Component<ApplicationCardProp
         return (
             <>
                 <Card style={{flex: 1, width: '80%'}}>
-                    <Card.Body>
-                        
-                        <Card.Title>
+                <Card.Header>
                         <Card.Img variant="top" src={icon} style={{width: '20%'}}/>
                             {name}
-                        </Card.Title>
+                        </Card.Header>
+                    <Card.Body>
                         <Card.Text>{description}</Card.Text>
                         <Button variant="link" href={html_url} >
                             <img src={PLAY_STORE_BUTTON} alt="Play" style={{width: '20%'}}></img>
                         </Button>
                     </Card.Body>
                 </Card>
+                <br></br>
             </>
         );
     }

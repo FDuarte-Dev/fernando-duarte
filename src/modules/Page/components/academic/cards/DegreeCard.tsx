@@ -37,6 +37,7 @@ export default class DegreeCard extends React.Component<DegreeCardProps, DegreeC
                         <CurriculumModal curriculum={curriculum} />
                     </Card.Body>
                 </Card>
+                <br></br>
             </>
         );
     }

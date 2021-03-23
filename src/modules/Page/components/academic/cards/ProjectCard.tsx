@@ -27,6 +27,7 @@ export default class ProjectCard extends React.Component<ProjectCardProps, Proje
                         </Card.Text>
                     </Card.Body>
                 </Card>
+                <br></br>
             </>
         );
     }

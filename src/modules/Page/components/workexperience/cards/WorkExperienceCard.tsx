@@ -48,12 +48,13 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                         </Container>
                     </Card.Header>
                     <Card.Body>
-                        <Card.Text>{technologies.join(", ")}</Card.Text>
                         {notable_tasks.map((task) => {
                             return <Card.Text>-{task}</Card.Text>;
                         })}
                     </Card.Body>
+                    <Card.Footer className="text-muted">Tech stack: {technologies.join(", ")}</Card.Footer>
                 </Card>
+                <br></br>
             </>
         );
     }

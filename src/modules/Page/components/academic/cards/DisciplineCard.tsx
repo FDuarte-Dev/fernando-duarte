@@ -31,6 +31,7 @@ export default class DisciplineCard extends React.Component<DisciplineCardProps,
                          <ProjectsModal projects={projects} />}
                     </Card.Body>
                 </Card>
+                <br></br>
             </>
         );
     }
