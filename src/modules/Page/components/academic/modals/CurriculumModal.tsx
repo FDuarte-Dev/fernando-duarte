@@ -16,7 +16,7 @@ export const CurriculumModal: React.FC<CurriculumModalProps> = (props) => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="outline-info" onClick={handleShow}>
         Curriculum
       </Button>
 

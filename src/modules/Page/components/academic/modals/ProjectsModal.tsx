@@ -16,7 +16,7 @@ export const ProjectsModal: React.FC<ProjectsModalProps> = (props) => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="outline-info" onClick={handleShow}>
       Project{props.projects.length > 1 ? 's' : ''}
       </Button>
 
