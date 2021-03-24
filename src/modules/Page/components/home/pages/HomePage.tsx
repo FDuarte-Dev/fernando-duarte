@@ -44,7 +44,7 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
             {loading && <LoadingPage />}
             {!loading &&
                 <>
-                    <img src={user.avatar_url} alt='user' />
+                    <img className="my_face" src={user.avatar_url} alt='user'/>
                     <h3>Welcome to my page!</h3>
                     My name is Fernando Duarte and I'm a Software Developer from Portugal. 
                     <br></br>

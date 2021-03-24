@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+.my_face {
+  max-width: 80%;
+}
 
 .social-container {
 }
