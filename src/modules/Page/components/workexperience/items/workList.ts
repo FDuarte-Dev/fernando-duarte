@@ -48,7 +48,7 @@ export const WORKS: Work[] = [
         notable_tasks: [
             'XSL bean generator from Java project',
             'REST API development and documentation for various business processes',
-            'Provider model generation to React components',
+            'Implemented generator to create React components from provider models',
             'Developed Rappid diagram visualization tool for React applications'
         ]
     }
