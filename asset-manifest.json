@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fernando-duarte/static/css/main.83a282c0.chunk.css",
-    "main.js": "/fernando-duarte/static/js/main.dd52615a.chunk.js",
-    "main.js.map": "/fernando-duarte/static/js/main.dd52615a.chunk.js.map",
+    "main.css": "/fernando-duarte/static/css/main.b42f1ebf.chunk.css",
+    "main.js": "/fernando-duarte/static/js/main.039a07f0.chunk.js",
+    "main.js.map": "/fernando-duarte/static/js/main.039a07f0.chunk.js.map",
     "runtime-main.js": "/fernando-duarte/static/js/runtime-main.f686f69c.js",
     "runtime-main.js.map": "/fernando-duarte/static/js/runtime-main.f686f69c.js.map",
     "static/css/2.150d169a.chunk.css": "/fernando-duarte/static/css/2.150d169a.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.54e0e4f3.chunk.js.map": "/fernando-duarte/static/js/3.54e0e4f3.chunk.js.map",
     "index.html": "/fernando-duarte/index.html",
     "static/css/2.150d169a.chunk.css.map": "/fernando-duarte/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.83a282c0.chunk.css.map": "/fernando-duarte/static/css/main.83a282c0.chunk.css.map",
+    "static/css/main.b42f1ebf.chunk.css.map": "/fernando-duarte/static/css/main.b42f1ebf.chunk.css.map",
     "static/js/2.cd39d2dd.chunk.js.LICENSE.txt": "/fernando-duarte/static/js/2.cd39d2dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f686f69c.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.cd39d2dd.chunk.js",
-    "static/css/main.83a282c0.chunk.css",
-    "static/js/main.dd52615a.chunk.js"
+    "static/css/main.b42f1ebf.chunk.css",
+    "static/js/main.039a07f0.chunk.js"
   ]
 }
