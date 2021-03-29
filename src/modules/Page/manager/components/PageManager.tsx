@@ -10,12 +10,14 @@ import NotFoundPage from '../../components/notfound/pages/NotFoundPage';
 import './PageManager.scss';
 
 interface PageManagerProps {
-    page: string
+    page: string,
+    theme: string
 }
 
 const mapStateToProps = (state: State) => {
     return {
-        page: state.page
+        page: state.page,
+        theme: state.theme
     };
 }
 

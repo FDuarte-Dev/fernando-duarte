@@ -1,3 +1,5 @@
+import { combineReducers } from "redux";
+
 export interface State {
     page: string;
     theme: string;
@@ -24,3 +26,5 @@ export const reducer = function (state = initialState, action: any) {
             return state;
     }
 }
+
+export default combineReducers({reducer});
