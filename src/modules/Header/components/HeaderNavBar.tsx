@@ -25,8 +25,6 @@ export default class HeaderNavBar extends React.Component<HeaderNavBarProps, Hea
         store.dispatch({ type: "CHANGE_PAGE", page: page });
     };
 
-    isSwitchOn = true;
-
     handleToggleTheme = () => (e: any) => {
         let theme = store.getState().theme === "light" ? "dark" : "light";
         store.dispatch({ type: "CHANGE_THEME", theme: theme });
@@ -34,8 +32,9 @@ export default class HeaderNavBar extends React.Component<HeaderNavBarProps, Hea
     };
 
     render() {
+        let { theme } = this.state;
         return (
-            <Navbar bg="light" expand="lg">
+            <Navbar bg={theme} expand="lg">
                 <Navbar.Brand onClick={this.handleChangePage("home")}>
                     Fernando Duarte
                 </Navbar.Brand>

@@ -1,7 +1,8 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
 import { State } from "../redux/reducer";
 import { connect } from 'react-redux';
+import styled, { ThemeProvider } from 'styled-components';
+import theme from "styled-theming";
 
 interface DarkThemeProviderProps {
   page: string,
@@ -16,6 +17,23 @@ const mapStateToProps = (state: State) => {
   };
 }
 
+export const backgroundColor = theme("theme", {
+  light: "#fff",
+  dark: "#2d2d2d",
+});
+
+export const textColor = theme("theme", {
+  light: "#000",
+  dark: "#fff",
+});
+
+const Container = styled.div`
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: ${backgroundColor};
+  color: ${textColor};
+`;
 
 class DarkThemeProviderComp extends React.Component<DarkThemeProviderProps> {
 
@@ -23,7 +41,9 @@ class DarkThemeProviderComp extends React.Component<DarkThemeProviderProps> {
       let { theme, themedComponents } = this.props;
       return (
         <ThemeProvider theme={{ theme: theme }}>
-          {themedComponents}
+          <Container className="App">
+            {themedComponents}
+          </Container>
         </ThemeProvider>
       )
   }
