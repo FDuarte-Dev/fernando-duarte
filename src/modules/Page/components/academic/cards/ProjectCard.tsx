@@ -23,10 +23,12 @@ export default class ProjectCard extends React.Component<ProjectCardProps, Proje
                     bg={theme} 
                     text={ theme === 'light' ? 'dark' : 'white'} 
                     style={{ flex: 1, width: "80%" }}>
-                    <Card.Body>
-                        <Card.Title>
+                    <Card.Header>
+                        <h5>
                             {name}
-                        </Card.Title>
+                        </h5>
+                    </Card.Header>
+                    <Card.Body>
                         <Card.Text>
                             {description}
                         </Card.Text>

@@ -28,11 +28,13 @@ export default class DegreeCard extends React.Component<DegreeCardProps, DegreeC
                 <Card 
                     bg={theme} 
                     text={ theme === 'light' ? 'dark' : 'white'} 
-                    style={{ flex: 1, width: "80%" }}>
-                    <Card.Body>
-                        <Card.Title>
+                    style={{ flex: 1, width: "90%" }}>
+                    <Card.Header>
+                        <h5>
                             {level.toString()}  in {field}
-                        </Card.Title>
+                        </h5>
+                    </Card.Header>
+                    <Card.Body>
                         <Card.Text>
                             {institution} | {location}
                         </Card.Text>
