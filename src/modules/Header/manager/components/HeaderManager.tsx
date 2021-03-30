@@ -19,7 +19,10 @@ class HeaderManagerComp extends React.Component<HeaderManagerProps> {
 
     render() {
         return (
-            <HeaderNavBar theme={this.props.theme}/>
+            <>
+                <HeaderNavBar theme={this.props.theme}/>
+                <br></br>
+            </>
         )
     }
 }
