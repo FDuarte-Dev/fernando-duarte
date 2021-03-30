@@ -21,7 +21,6 @@ const mapStateToProps = (state: State) => {
     };
 }
 
-
 class PageManagerComp extends React.Component<PageManagerProps> {
 
     getCurrentPage(page: string) {

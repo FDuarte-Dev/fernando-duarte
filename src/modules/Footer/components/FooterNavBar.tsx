@@ -12,20 +12,34 @@ interface FooterNavBarProps {
 
 interface FooterNavBarState {
     theme: string;
+    variant: 'dark' | 'light';
 }
 
 export default class FooterNavBar extends React.Component<FooterNavBarProps, FooterNavBarState> {
     constructor (props: FooterNavBarProps) {
         super(props);
         this.state = {
-            theme: props.theme
+            theme: props.theme,
+            variant: this.getVariant(props.theme)
         };
     }
 
+    componentDidUpdate(prevProps: FooterNavBarProps) {
+        if (prevProps.theme !== this.props.theme) {
+            this.setState({variant: this.getVariant(this.props.theme)});
+        }
+      }
+
+    private getVariant(str: string): "dark" | "light" {
+        return str === 'light' ? 'light' : 'dark';
+    }
+
     render() {
-        let { theme } = this.state;
+        let { theme } = this.props;
+        let { variant } = this.state;
+
         return (
-            <Navbar bg={theme} fixed="bottom">
+            <Navbar bg={theme} variant={variant} fixed="bottom">
                 <Container>
                         <Nav >FDuarte-Dev @ {new Date().getFullYear()}</Nav>
                         <Nav >

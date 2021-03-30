@@ -10,15 +10,24 @@ interface HeaderNavBarProps {
 
 interface HeaderNavBarState {
     theme: string;
+    variant: 'dark' | 'light';
 }
 
 export default class HeaderNavBar extends React.Component<HeaderNavBarProps, HeaderNavBarState> {
     constructor (props: HeaderNavBarProps) {
         super(props);
         this.state = {
-            theme: props.theme
+            theme: props.theme,
+            variant: this.getVariant(props.theme)
         };
     }
+
+    
+    componentDidUpdate(prevProps: HeaderNavBarProps) {
+        if (prevProps.theme !== this.props.theme) {
+            this.setState({variant: this.getVariant(this.props.theme)});
+        }
+      }
 
     handleChangePage = (page: string) => (e: any) => {
         e.preventDefault();
@@ -31,10 +40,15 @@ export default class HeaderNavBar extends React.Component<HeaderNavBarProps, Hea
         console.log(theme);
     };
 
+    private getVariant(str: string): "dark" | "light" {
+        return str === 'light' ? 'light' : 'dark';
+    }
+
     render() {
-        let { theme } = this.state;
+        let { theme } = this.props;
+        let { variant } = this.state;
         return (
-            <Navbar bg={theme} expand="lg">
+            <Navbar bg={theme} variant={variant} expand="lg">
                 <Navbar.Brand onClick={this.handleChangePage("home")}>
                     Fernando Duarte
                 </Navbar.Brand>
