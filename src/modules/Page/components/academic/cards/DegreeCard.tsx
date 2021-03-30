@@ -1,4 +1,5 @@
 import React from "react";
+import { store } from "../../../../../redux/store";
 import { Card } from "react-bootstrap";
 import { Degree } from "../models/model";
 import { CurriculumModal } from "../modals/CurriculumModal";
@@ -21,9 +22,13 @@ export default class DegreeCard extends React.Component<DegreeCardProps, DegreeC
             end_date,
             curriculum,
         } = this.props.degree;
+        let { theme } = store.getState();
         return (
             <>
-                <Card style={{ flex: 1, width: "80%" }}>
+                <Card 
+                    bg={theme} 
+                    text={ theme === 'light' ? 'dark' : 'white'} 
+                    style={{ flex: 1, width: "80%" }}>
                     <Card.Body>
                         <Card.Title>
                             {level.toString()}  in {field}

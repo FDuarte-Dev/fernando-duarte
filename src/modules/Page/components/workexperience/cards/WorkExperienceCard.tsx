@@ -1,4 +1,5 @@
 import React from "react";
+import { store } from "../../../../../redux/store";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Work } from "../models/models";
 
@@ -20,9 +21,14 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             notable_tasks,
             technologies,
         } = this.props.work;
+        let { theme } = store.getState();
         return (
             <>
-                <Card border="info" style={{ flex: 1, width: "80%" }}>
+                <Card 
+                    bg={theme} 
+                    text={ theme === 'light' ? 'dark' : 'white'} 
+                    border="info" 
+                    style={{ flex: 1, width: "80%" }}>
                     <Card.Header>
                         <Container>
                             <Row>

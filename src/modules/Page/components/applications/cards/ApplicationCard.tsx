@@ -1,4 +1,5 @@
 import React from 'react';
+import { store } from "../../../../../redux/store";
 import { Button, Card } from 'react-bootstrap';
 import { Application } from '../models/model';
 import { PLAY_STORE_BUTTON } from '../../../../../utils/constants';
@@ -13,9 +14,13 @@ export default class ApplicationCard extends React.Component<ApplicationCardProp
 
     render() {
         let { name, description, html_url, icon } = this.props.application;
+        let { theme } = store.getState();
         return (
             <>
-                <Card style={{flex: 1, width: '80%'}}>
+                <Card 
+                    bg={theme} 
+                    text={ theme === 'light' ? 'dark' : 'white'} 
+                    style={{flex: 1, width: '80%'}}>
                 <Card.Header>
                         <Card.Img variant="top" src={icon} style={{width: '20%'}}/>
                             {name}

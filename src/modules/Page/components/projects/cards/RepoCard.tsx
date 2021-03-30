@@ -1,4 +1,5 @@
 import React from "react";
+import { store } from "../../../../../redux/store";
 import { Button, Card } from "react-bootstrap";
 import { GitHubServices } from "../services/GitHubServices";
 import { GitHubRepo } from "../models/model";
@@ -44,12 +45,16 @@ export default class RepoCard extends React.Component<
     render() {
         let { languages, loading } = this.state;
         let { name, description, html_url } = this.props.repository;
+        let { theme } = store.getState();
         return (
             <>
                 {loading && <LoadingCard />}
                 {!loading && (
                     <>
-                        <Card style={{ flex: 1, width: "80%" }}>
+                        <Card 
+                            bg={theme} 
+                            text={ theme === 'light' ? 'dark' : 'white'} 
+                            style={{ flex: 1, width: "80%" }}>
                             <Card.Header>{name}</Card.Header>
                             <Card.Body>
                                 <Card.Text>{description}</Card.Text>
