@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardDeck } from 'react-bootstrap';
+import { CardDeck, Container } from 'react-bootstrap';
 import DegreeCard from '../cards/DegreeCard';
 import { Degree } from '../models/model';
 import { ACADEMIC } from '../items/degreesList';
@@ -23,13 +23,13 @@ export default class AcademicPage extends React.Component<AcademicPageProps, Aca
     render() {
         let { degrees } = this.state;
         return (
-            <>
-            <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                {degrees.map((degree) => {
-                    return <DegreeCard degree={degree}/>
-                })}
-            </CardDeck>
-        </>
+            <Container className='page-container'>
+                <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    {degrees.map((degree) => {
+                        return <DegreeCard degree={degree}/>
+                    })}
+                </CardDeck>
+            </Container>
         );
     }
 }

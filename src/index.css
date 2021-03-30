@@ -16,8 +16,19 @@ code {
   max-width: 80%;
 }
 
-.social-container {
+.page-parent {
+  min-height: 90vh;
 }
+
+.page-container {
+  height: max-content;
+  width: 100vw;
+}
+
+.page-padding{
+  padding-bottom: 10vh;
+}
+
 a.social {
   margin: 0 1rem;
   transition: transform 250ms;

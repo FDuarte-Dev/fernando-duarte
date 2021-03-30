@@ -7,7 +7,6 @@ import WorkExperiencePage from '../../components/workexperience/pages/WorkExperi
 import ProjectsPage from '../../components/projects/pages/ProjectsPage';
 import ApplicationsPage from '../../components/applications/pages/ApplicationsPage';
 import NotFoundPage from '../../components/notfound/pages/NotFoundPage';
-import './PageManager.scss';
 
 interface PageManagerProps {
     page: string,
@@ -43,8 +42,8 @@ class PageManagerComp extends React.Component<PageManagerProps> {
     render() {
         let Page = this.getCurrentPage(this.props.page);
         return (
-            <div>
-                <Page />
+            <div className="page-parent">
+                <Page/>
                 <div className="page-padding" />
             </div>
         )

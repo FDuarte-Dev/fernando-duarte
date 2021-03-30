@@ -28,9 +28,6 @@ export const textColor = theme("theme", {
 });
 
 const Container = styled.div`
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
   background-color: ${backgroundColor};
   color: ${textColor};
 `;

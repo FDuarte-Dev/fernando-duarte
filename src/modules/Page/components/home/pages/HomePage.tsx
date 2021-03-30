@@ -3,6 +3,7 @@ import { GITHUB_USERNAME } from '../../../../../utils/constants';
 import { GitHubUser } from '../models/model';
 import { GitHubServices } from '../services/GitHubServices';
 import LoadingPage from '../../loading/pages/LoadingPage';
+import { Container } from 'react-bootstrap';
 
 interface HomePageProps {
 
@@ -43,7 +44,7 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
             <>
             {loading && <LoadingPage />}
             {!loading &&
-                <>
+                <Container className='page-container'>
                     <img className="my_face" src={user.avatar_url} alt='user'/>
                     <h3>Welcome to my page!</h3>
                     My name is Fernando Duarte and I'm a Software Developer from Portugal. 
@@ -51,7 +52,7 @@ export default class HomePage extends React.Component<HomePageProps, HomePageSta
                     In this webpage you can find a small overview of my progresses in the world of programming.
                     <br></br>
                     Feel free to explore further, and to hit me up using any of the contacts below.
-                </>
+                </Container>
             }
             </>
         );

@@ -28,7 +28,7 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                     bg={theme} 
                     text={ theme === 'light' ? 'dark' : 'white'} 
                     border="info" 
-                    style={{ flex: 1, width: "80%" }}>
+                    style={{ flex: 1, width: "100%" }}>
                     <Card.Header>
                         <Container>
                             <Row>
