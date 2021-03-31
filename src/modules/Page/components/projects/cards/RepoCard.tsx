@@ -55,13 +55,17 @@ export default class RepoCard extends React.Component<
                             bg={theme} 
                             text={ theme === 'light' ? 'dark' : 'white'} 
                             style={{ flex: 1, width: "80%" }}>
-                            <Card.Header>{name}</Card.Header>
+                            <Card.Header>
+                                <h5>
+                                    {name}
+                                </h5>
+                            </Card.Header>
                             <Card.Body>
                                 <Card.Text>{description}</Card.Text>
                                 <Card.Text>
                                     Tech stack: {languages.join(", ")}
                                 </Card.Text>
-                                <Button variant="primary" href={html_url}>
+                                <Button variant="outline-info" href={html_url}>
                                     Visit
                                 </Button>
                             </Card.Body>
