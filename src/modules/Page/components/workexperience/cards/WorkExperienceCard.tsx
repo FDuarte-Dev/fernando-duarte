@@ -58,7 +58,9 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                             return <Card.Text>-{task}</Card.Text>;
                         })}
                     </Card.Body>
-                    <Card.Footer className="text-muted">Tech stack: {technologies.join(", ")}</Card.Footer>
+                    <Card.Footer className="text-muted">
+                        Tech stack: {technologies.join(", ")}
+                    </Card.Footer>
                 </Card>
                 <br></br>
             </>

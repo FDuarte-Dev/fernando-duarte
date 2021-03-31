@@ -29,7 +29,22 @@ function getRepoLanguages(fullName: string, callback: (arg: any, err: any) => vo
   })
 }
 
+function getRepoReadME(fullName: string, callback: (arg: any, err: any) => void) {
+  GitHubApiHttpClient.get(`/repos/${fullName}/readme`)
+  .then((response: AxiosResponse) => {
+    if (callback) {
+      callback(response, null);
+    }
+  })
+  .catch((error: AxiosError) => {
+    if (callback) {
+      callback(null, error);
+    }
+  })
+}
+
 export const GitHubServices = {
     getUserRepositories,
-    getRepoLanguages
+    getRepoLanguages,
+    getRepoReadME
 }
