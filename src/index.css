@@ -29,6 +29,30 @@ code {
   padding-bottom: 10vh;
 }
 
+.academic-light-modal .modal-content .modal-header {
+  color: rgb(50 56 62); 
+  border-bottom: 1px solid #d9dadb;
+}
+
+.academic-dark-modal .modal-content {
+  background-color: #343a40;
+  
+}
+
+.academic-dark-modal .modal-content .modal-header {
+  color: rgb(50 56 62); 
+  border-bottom: 1px solid #2C3136;
+}
+
+.academic-dark-modal .modal-content .modal-footer {
+  color: rgb(50 56 62); 
+  border-top: 1px solid #2C3136;
+}
+
+.academic-dark-modal .modal-content .modal-title {
+  color: #FFFFFF; 
+}
+
 a.social {
   margin: 0 1rem;
   transition: transform 250ms;
