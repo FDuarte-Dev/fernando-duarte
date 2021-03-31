@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardDeck } from 'react-bootstrap';
+import { CardDeck, Container } from 'react-bootstrap';
 import ApplicationCard from '../cards/ApplicationCard';
 import { Application } from '../models/model';
 import { APPS } from '../items/applicationsList';
@@ -23,13 +23,13 @@ export default class ApplicationsPage extends React.Component<ApplicationsPagePr
     render() {
         let { applications } = this.state;
         return (
-            <>
+            <Container className='page-container'>
                 <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                     {applications.map((application) => {
                         return <ApplicationCard application={application}/>
                     })}
                 </CardDeck>
-            </>
+            </Container>
         );
     }
 }

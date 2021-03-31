@@ -3,7 +3,7 @@ import { GITHUB_USERNAME } from '../../../../../utils/constants';
 import RepoCard from '../cards/RepoCard';
 import { GitHubRepo } from '../models/model';
 import { GitHubServices } from '../services/GitHubServices';
-import { CardDeck } from 'react-bootstrap';
+import { CardDeck, Container } from 'react-bootstrap';
 import LoadingPage from '../../loading/pages/LoadingPage';
 
 interface ProjectsPageProps {
@@ -41,13 +41,13 @@ export default class ProjectsPage extends React.Component<ProjectsPageProps, Pro
             <>
             {loading && <LoadingPage />}
             {!loading &&
-                <>
+                <Container className='page-container'>
                     <CardDeck style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                         {repos.map((repo) => {
                             return <RepoCard repository={repo}/>
                         })}
                     </CardDeck>
-                </>
+                </Container>
             }
             </>
         );
