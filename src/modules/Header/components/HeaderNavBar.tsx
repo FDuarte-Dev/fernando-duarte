@@ -56,7 +56,7 @@ export default class HeaderNavBar extends React.Component<HeaderNavBarProps, Hea
                     onChange={this.handleToggleTheme()}
                     type="switch"
                     id="custom-switch"
-                    label="Change Theme"/>
+                    label="Theme"/>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
