@@ -86,11 +86,16 @@ export default class RepoCard extends React.Component<
                             <Card.Body>
                                 <Card.Text>{description}</Card.Text>
                                 {readMe_url && 
-                                    <Col>
-                                        <Button variant="outline-info" href={readMe_url}>
-                                            View ReadME
-                                        </Button>                                
-                                    </Col>
+                                    <>
+                                        <Col>
+                                            <Button variant="outline-info" href={readMe_url}>
+                                                View ReadME
+                                            </Button>
+                                        </Col>
+                                        <Col>
+                                            <br></br>
+                                        </Col>
+                                    </>
                                 }
                                 <Col>
                                     <Button variant="outline-info" href={html_url}>
