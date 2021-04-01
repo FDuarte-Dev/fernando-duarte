@@ -10,24 +10,26 @@ interface HeaderNavBarProps {
 
 interface HeaderNavBarState {
     theme: string;
-    variant: 'dark' | 'light';
+    variant: "dark" | "light";
 }
 
-export default class HeaderNavBar extends React.Component<HeaderNavBarProps, HeaderNavBarState> {
-    constructor (props: HeaderNavBarProps) {
+export default class HeaderNavBar extends React.Component<
+    HeaderNavBarProps,
+    HeaderNavBarState
+> {
+    constructor(props: HeaderNavBarProps) {
         super(props);
         this.state = {
             theme: props.theme,
-            variant: this.getVariant(props.theme)
+            variant: this.getVariant(props.theme),
         };
     }
 
-    
     componentDidUpdate(prevProps: HeaderNavBarProps) {
         if (prevProps.theme !== this.props.theme) {
-            this.setState({variant: this.getVariant(this.props.theme)});
+            this.setState({ variant: this.getVariant(this.props.theme) });
         }
-      }
+    }
 
     handleChangePage = (page: string) => (e: any) => {
         e.preventDefault();
@@ -41,7 +43,7 @@ export default class HeaderNavBar extends React.Component<HeaderNavBarProps, Hea
     };
 
     private getVariant(str: string): "dark" | "light" {
-        return str === 'light' ? 'light' : 'dark';
+        return str === "light" ? "light" : "dark";
     }
 
     render() {
@@ -52,11 +54,13 @@ export default class HeaderNavBar extends React.Component<HeaderNavBarProps, Hea
                 <Navbar.Brand onClick={this.handleChangePage("home")}>
                     Fernando Duarte
                 </Navbar.Brand>
-                <Form.Switch 
+                <Form.Switch
                     onChange={this.handleToggleTheme()}
+                    checked={theme === "dark"}
                     type="switch"
                     id="custom-switch"
-                    label="Theme"/>
+                    label="Theme"
+                />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
