@@ -15,6 +15,7 @@ export default class DisciplineCard extends React.Component<DisciplineCardProps,
     render() {
         let {
             name,
+            description,
             ects,
             projects
         } = this.props.discipline;
@@ -32,11 +33,14 @@ export default class DisciplineCard extends React.Component<DisciplineCardProps,
                     </Card.Header>
                     <Card.Body>
                         <Card.Text>
-                            {ects} ects
+                            {description}
                         </Card.Text>
                         {projects && projects.length > 0 &&
                          <ProjectsModal projects={projects} />}
                     </Card.Body>
+                    <Card.Footer className="text-muted">
+                        {ects} ects
+                    </Card.Footer>
                 </Card>
                 <br></br>
             </>
