@@ -1,6 +1,7 @@
 import React from 'react';
 import { FACE_LOGO } from '../../../../../utils/constants';
 import { Container } from 'react-bootstrap';
+import './HomePage.scss'
 
 export default class HomePage extends React.Component {
 

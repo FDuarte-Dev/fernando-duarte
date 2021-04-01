@@ -1,35 +1,6 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.my_face {
-  width: 512px;
-  max-width: 80%;
-  border-radius: 5% ;
-  box-shadow: 3px 3px 20px 0px #999;
-}
-
-.page-parent {
-  min-height: 90vh;
-}
-
 .page-container {
   height: max-content;
   width: 100vw;
-}
-
-.page-padding{
-  padding-bottom: 10vh;
 }
 
 .academic-light-modal .modal-content .modal-header {
@@ -54,38 +25,4 @@ code {
 
 .academic-dark-modal .modal-content .modal-title {
   color: #FFFFFF; 
-}
-
-a.social {
-  margin: 0 1rem;
-  transition: transform 250ms;
-  display: inline-block;
-}
-
-a.social:hover {
-  transform: translateY(-2px);
-}
-
-a.email {
-  color: #4285F4;
-}
-
-a.email:hover {
-  color: #4285F4;
-}
-
-a.github {
-  color: #211F1F;
-}
-
-a.github:hover {
-  color: #211F1F;
-}
-
-a.linkedin {
-  color: #0e76a8;
-}
-
-a.linkedin:hover {
-  color: #0e76a8;
 }
