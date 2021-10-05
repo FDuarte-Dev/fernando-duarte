@@ -7,25 +7,24 @@ export const WORKS: Work[] = [
     {
         company_name: 'Morphis Technologies',
         company_logo: MORPHIS_LOGO,
-        location: 'Lisbon, Portugal',
+        location: 'Lisbon, Portugal (Remote)',
         title: 'Software Developer',
         start_date: moment(new Date(2020, 9)).format('MMM YYYY'),
         technologies: [
-            'Java',
-            'TypeScript',
-            'Javascript',
-            'Spring',
-            'OpenAPI',
             'React',
-            'Redux',
+            'TypeScript',
+            'Spring',
+            'Java',
             'Apache CouchDB',
+            'OpenAPI',
+            'Redux',
             'JointJs'
         ],
         notable_tasks: [
-            'XSL bean generator from Java project',
-            'REST API development and documentation for various business processes',
-            'Implemented generator to create React components from provider models',
-            'Developed Rappid diagram visualization tool for React applications'
+            'Working full stack on a React application with Java and CouchDB backend.',
+            'Development on a low code / no code React application for citizen developers.',
+            'REST API development, implementation, and documentation.',
+            'Developed Rappid diagram visualization tool.'
         ]
     },
     {
@@ -49,7 +48,7 @@ export const WORKS: Work[] = [
             'Developed REST microservice for asynchronous messaging.',
             'Implemented real-time encryption on a video call service.',
             'Developed integration and functional automated testing, guaranteeing continuous integration.',
-            'Worked on development of VoIP call related functionalities using the SIP protocol'
+            'Worked on development of VoIP call related functionalities using the SIP protocol.'
         ]
     }
 ];
