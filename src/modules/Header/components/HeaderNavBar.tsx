@@ -59,7 +59,7 @@ export default class HeaderNavBar extends React.Component<
                     checked={theme === "dark"}
                     type="switch"
                     id="custom-switch"
-                    label="Theme"
+                    label={theme === "dark" ? "🌙": "☀️"}
                 />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
