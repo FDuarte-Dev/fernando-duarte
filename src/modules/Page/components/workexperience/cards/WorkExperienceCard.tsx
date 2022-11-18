@@ -19,6 +19,7 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             end_date,
             location,
             notable_tasks,
+            languages,
             technologies,
         } = this.props.work;
         let { theme } = store.getState();
@@ -58,6 +59,9 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                             return <Card.Text>-{task}</Card.Text>;
                         })}
                     </Card.Body>
+                    <Card.Footer className="text-muted">
+                        Languages: {languages.join(", ")}
+                    </Card.Footer>
                     <Card.Footer className="text-muted">
                         Tech stack: {technologies.join(", ")}
                     </Card.Footer>

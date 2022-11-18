@@ -10,15 +10,18 @@ export const WORKS: Work[] = [
         location: 'Lisbon, Portugal (Remote)',
         title: 'Software Developer',
         start_date: moment(new Date(2020, 9)).format('MMM YYYY'),
-        technologies: [
-            'React',
-            'TypeScript',
-            'Spring',
+        languages: [
             'Java',
-            'Apache CouchDB',
+            'Typescript',
+            'JSON'
+        ],
+        technologies: [
+            'Spring Framework',
             'OpenAPI',
+            'React',
             'Redux',
-            'JointJs'
+            'JointJs',
+            'Apache CouchDB'
         ],
         notable_tasks: [
             'Working full stack on a React application with Java and CouchDB backend.',
@@ -34,15 +37,15 @@ export const WORKS: Work[] = [
         title: 'Software Engineer',
         start_date: moment(new Date(2018, 7)).format("MMM YYYY"),
         end_date: moment(new Date(2020, 7)).format("MMM YYYY"),
-        technologies: [
-            'C#',
-            'C++',
+        languages: [
+            '.NET C#',
             'Javascript',
-            '.NET',
-            'Entity Framework',
-            'SQL Server',
+            'C++'
+        ],
+        technologies: [
             'Azure DevOps',
-            'Selenium WebDriver'
+            'Selenium WebDriver',
+            'Entity Framework'
         ],
         notable_tasks: [
             'Developed REST microservice for asynchronous messaging.',

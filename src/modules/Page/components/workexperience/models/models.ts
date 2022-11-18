@@ -6,5 +6,6 @@ export interface Work {
     end_date?: string;
     location: string;
     notable_tasks: string[];
+    languages: string[];
     technologies: string[];
 }
