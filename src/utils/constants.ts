@@ -13,3 +13,4 @@ export const MORSE_TRANSLATOR_LOGO = `${process.env.PUBLIC_URL}/assets/logos/app
 
 export const COLLAB_LOGO = `${process.env.PUBLIC_URL}/assets/logos/company/Collab-Logo.png`;
 export const MORPHIS_LOGO = `${process.env.PUBLIC_URL}/assets/logos/company/Morphis-Logo.png`;
+export const CODURANCE_LOGO = `${process.env.PUBLIC_URL}/assets/logos/company/Codurance-Logo.png`;

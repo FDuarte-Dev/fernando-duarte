@@ -1,15 +1,40 @@
 import moment from 'moment';
 
 import { Work } from "../models/models";
-import { COLLAB_LOGO , MORPHIS_LOGO } from '../../../../../utils/constants';
+import { COLLAB_LOGO , MORPHIS_LOGO, CODURANCE_LOGO } from '../../../../../utils/constants';
 
 export const WORKS: Work[] = [
+    {
+        company_name: 'Codurance Ltd',
+        company_logo: CODURANCE_LOGO,
+        location: 'London, UK (Remote)',
+        title: 'Senior Software Craftsperson',
+        start_date: moment(new Date(2022, 5)).format('MMM YYYY'),
+        languages: [
+            '.NET C#',
+            'SQL',
+            'XML',
+            'Go'
+        ],
+        technologies: [
+            'AWS',
+            'ArgoCD',
+            'Github Actions'
+        ],
+        notable_tasks: [
+            'Software consulting, focused on software craftsmanship paradigm.',
+            'Implemented request processing for hotel booking service.',
+            'Strong aaplication of outside-in TDD and behaviour driven development.',
+            'Ensured continuous integration, deployment, and delivery.'
+        ]
+    },
     {
         company_name: 'Morphis Technologies',
         company_logo: MORPHIS_LOGO,
         location: 'Lisbon, Portugal (Remote)',
         title: 'Software Developer',
         start_date: moment(new Date(2020, 9)).format('MMM YYYY'),
+        end_date: moment(new Date(2022, 4)).format('MMM YYYY'),
         languages: [
             'Java',
             'Typescript',
