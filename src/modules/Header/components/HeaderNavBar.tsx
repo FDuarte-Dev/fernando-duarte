@@ -64,9 +64,6 @@ export default class HeaderNavBar extends React.Component<
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link onClick={this.handleChangePage("home")}>
-                            Home
-                        </Nav.Link>
                         <Nav.Link onClick={this.handleChangePage("academic")}>
                             Academic
                         </Nav.Link>
