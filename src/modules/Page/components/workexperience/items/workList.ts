@@ -10,22 +10,30 @@ export const WORKS: Work[] = [
         location: 'London, UK (Remote)',
         title: 'Senior Software Craftsperson',
         start_date: moment(new Date(2022, 5)).format('MMM YYYY'),
-        languages: [
-            '.NET C#',
-            'SQL',
-            'XML',
-            'Go'
-        ],
-        technologies: [
-            'AWS',
-            'ArgoCD',
-            'Github Actions'
-        ],
         notable_tasks: [
-            'Software consulting, focused on software craftsmanship paradigm.',
-            'Implemented request processing for hotel booking service.',
-            'Strong aaplication of outside-in TDD and behaviour driven development.',
-            'Ensured continuous integration, deployment, and delivery.'
+            'Software consulting focused on the software craftsmanship paradigm.',
+            'Strong application of TDD, BDD, Refactoring, CI/CD, and other XP practices to ensure the stability and quality of the developed products.'
+        ],
+        projects: [
+            {
+                project_name: 'Hotelier Project',
+                location: 'Spain/Romania (Remote)',
+                start_date: moment(new Date(2022, 6)).format('MMM YYYY'),
+                notable_tasks: [
+                    'Implemented request processing for hotel booking service resulting in a 20x increase in traffic.'
+                ],
+                languages: [
+                    '.NET C#',
+                    'SQL',
+                    'XML',
+                    'Go'
+                ],
+                technologies: [
+                    'AWS',
+                    'ArgoCD',
+                    'Github Actions'
+                ],
+            }
         ]
     },
     {
@@ -49,10 +57,8 @@ export const WORKS: Work[] = [
             'Apache CouchDB'
         ],
         notable_tasks: [
-            'Working full stack on a React application with Java and CouchDB backend.',
-            'Development on a low code / no code React application for citizen developers.',
-            'REST API development, implementation, and documentation.',
-            'Developed Rappid diagram visualization tool.'
+            'Worked full stack on a low-code back-office application that focused its usability on citizen developers, giving them the ability to monitor and manage the service’s workflows, using React with a Java and CouchDB backend.',
+            'Implemented and fully documented an internal REST API to bridge the existing company’s products.'
         ]
     },
     {
@@ -73,10 +79,8 @@ export const WORKS: Work[] = [
             'Entity Framework'
         ],
         notable_tasks: [
-            'Developed REST microservice for asynchronous messaging.',
-            'Implemented real-time encryption on a video call service.',
-            'Developed integration and functional automated testing, guaranteeing continuous integration.',
-            'Worked on development of VoIP call related functionalities using the SIP protocol.'
+            'Worked in the development of a Voice and Video over IP, call software product, focusing on providing a stable and secure means of communication for call-center professionals, focusing on incremental improvements that greatly reduced overhead.',
+            'Implemented a RESTful microservice for asynchronous messaging, which was then integrated into the existing product to replace decommissioned providers.'
         ]
     }
 ];

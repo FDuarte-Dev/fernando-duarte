@@ -2,6 +2,7 @@ import React from "react";
 import { store } from "../../../../../redux/store";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Work } from "../models/models";
+import ProjectsDeck from "./ProjectsDeck";
 
 interface WorkExperienceCardProps {
     work: Work;
@@ -21,6 +22,7 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             notable_tasks,
             languages,
             technologies,
+            projects
         } = this.props.work;
         let { theme } = store.getState();
         return (
@@ -59,12 +61,17 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                             return <Card.Text>-{task}</Card.Text>;
                         })}
                     </Card.Body>
-                    <Card.Footer className="text-muted">
-                        Languages: {languages.join(", ")}
-                    </Card.Footer>
-                    <Card.Footer className="text-muted">
-                        Tech stack: {technologies.join(", ")}
-                    </Card.Footer>
+                    {projects && <ProjectsDeck projects={projects}/>}
+                    { languages &&
+                        <Card.Footer className="text-muted">
+                            Languages: {languages.join(", ")}
+                        </Card.Footer>
+                    }
+                    { technologies &&
+                        <Card.Footer className="text-muted">
+                            Tech stack: {technologies.join(", ")}
+                        </Card.Footer>
+                    }
                 </Card>
                 <br></br>
             </>

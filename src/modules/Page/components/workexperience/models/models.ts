@@ -6,6 +6,17 @@ export interface Work {
     end_date?: string;
     location: string;
     notable_tasks: string[];
+    languages?: string[];
+    technologies?: string[];
+    projects?: Project[];
+}
+
+export interface Project {
+    project_name: string;
+    start_date: string;
+    end_date?: string;
+    location: string;
+    notable_tasks: string[];
     languages: string[];
     technologies: string[];
 }
