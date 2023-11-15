@@ -57,6 +57,7 @@
     "@types/react-redux": "^7.1.30",
     "@types/styled-components": "^5.1.30",
     "@types/styled-theming": "^2.2.8",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.0.0",
     "redux-devtools-extension": "^2.13.9"
   }
