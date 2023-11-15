@@ -2,7 +2,6 @@ import React from "react";
 import { store } from "../../../../../redux/store";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Project } from "../models/models";
-import ProjectsDeck from "./ProjectsDeck";
 
 interface ProjectsCardProps {
     project: Project;

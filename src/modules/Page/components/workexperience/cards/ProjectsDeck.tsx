@@ -1,6 +1,5 @@
 import React from 'react';
 import { CardDeck, Container } from 'react-bootstrap';
-import { WORKS } from '../items/workList';
 import { Project } from '../models/models';
 import ProjectsCard from "./ProjectsCard";
 
