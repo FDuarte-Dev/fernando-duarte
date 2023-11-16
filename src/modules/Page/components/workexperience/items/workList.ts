@@ -17,7 +17,7 @@ export const WORKS: Work[] = [
         projects: [
             {
                 project_name: 'Hotelier Project',
-                location: 'Spain/Romania (Remote)',
+                location: 'Spain (Remote)',
                 start_date: moment(new Date(2022, 6)).format('MMM YYYY'),
                 notable_tasks: [
                     'Implemented request processing for hotel booking service resulting in a 20x increase in traffic.'
