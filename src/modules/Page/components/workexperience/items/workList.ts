@@ -20,7 +20,7 @@ export const WORKS: Work[] = [
                 location: 'Spain (Remote)',
                 start_date: moment(new Date(2022, 6)).format('MMM YYYY'),
                 notable_tasks: [
-                    'Implemented request processing for hotel booking service resulting in a 20x increase in traffic.'
+                    'Implemented request processing for hotel booking service resulting in a 20x increase in traffic and 80% reduction in cost.'
                 ],
                 languages: [
                     '.NET C#',
