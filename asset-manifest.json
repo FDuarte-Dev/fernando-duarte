@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fernando-duarte/static/css/main.cbb32dc0.css",
-    "main.js": "/fernando-duarte/static/js/main.6fab0cc8.js",
+    "main.js": "/fernando-duarte/static/js/main.71405b3d.js",
     "static/js/787.b5167111.chunk.js": "/fernando-duarte/static/js/787.b5167111.chunk.js",
     "index.html": "/fernando-duarte/index.html",
     "main.cbb32dc0.css.map": "/fernando-duarte/static/css/main.cbb32dc0.css.map",
-    "main.6fab0cc8.js.map": "/fernando-duarte/static/js/main.6fab0cc8.js.map",
+    "main.71405b3d.js.map": "/fernando-duarte/static/js/main.71405b3d.js.map",
     "787.b5167111.chunk.js.map": "/fernando-duarte/static/js/787.b5167111.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbb32dc0.css",
-    "static/js/main.6fab0cc8.js"
+    "static/js/main.71405b3d.js"
   ]
 }
