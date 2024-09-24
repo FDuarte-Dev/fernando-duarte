@@ -11,27 +11,32 @@ export const WORKS: Work[] = [
         title: 'Senior Software Craftsperson',
         start_date: moment(new Date(2022, 5)).format('MMM YYYY'),
         notable_tasks: [
-            'Software consulting focused on the software craftsmanship paradigm.',
-            'Strong application of TDD, BDD, Refactoring, CI/CD, and other XP practices to ensure the stability and quality of the developed products.'
+            'Software consulting that emphasizes the software craftsmanship paradigm.',
+            'Strong emphasis on TDD, BDD, Refactoring, CI/CD, and other XP practices to guarantee product stability and quality.'
         ],
         projects: [
             {
-                project_name: 'Hotelier Project',
+                project_name: 'Hospitality Sector Project',
                 location: 'Spain (Remote)',
                 start_date: moment(new Date(2022, 6)).format('MMM YYYY'),
                 notable_tasks: [
-                    'Implemented request processing for hotel booking service resulting in a 20x increase in traffic and 80% reduction in cost.'
+                    'Revamped the request processing for hotel booking service, resulting in a 20x increase in traffic and an 80% reduction in cost.',
+                    'Managed multiple initiatives for continuous product development, leading to a 98.6% decrease in errors.'
                 ],
                 languages: [
                     '.NET C#',
+                    'PHP',
                     'SQL',
+                    'Golang',
                     'XML',
-                    'Go'
+                    'JSON'
                 ],
                 technologies: [
                     'AWS',
-                    'ArgoCD',
-                    'Github Actions'
+                    'Argo CD',
+                    'Github Actions',
+                    'SonarQube',
+                    'Grafana'
                 ],
             }
         ]
@@ -57,8 +62,8 @@ export const WORKS: Work[] = [
             'Apache CouchDB'
         ],
         notable_tasks: [
-            'Worked full stack on a low-code back-office application that focused its usability on citizen developers, giving them the ability to monitor and manage the service’s workflows, using React with a Java and CouchDB backend.',
-            'Implemented and fully documented an internal REST API to bridge the existing company’s products.'
+            'Worked on a full-stack, low-code back-office application prioritizing usability for citizen developers to monitor and manage services.',
+            'Developed and thoroughly documented an internal REST API to connect the company\'s existing products. '
         ]
     },
     {
@@ -79,7 +84,7 @@ export const WORKS: Work[] = [
             'Entity Framework'
         ],
         notable_tasks: [
-            'Worked in the development of a Voice and Video over IP, call software product, focusing on providing a stable and secure means of communication for call-center professionals, focusing on incremental improvements that greatly reduced overhead.',
+            'Worked on developing a VoIP call software product, focusing on providing a stable and secure means of communication for call center professionals, providing incremental improvements that greatly reduced overhead.',
             'Implemented a RESTful microservice for asynchronous messaging, which was then integrated into the existing product to replace decommissioned providers.'
         ]
     }
