@@ -1,20 +1,24 @@
-import React from 'react';
-import { FACE_LOGO } from '../../../../../utils/constants';
-import { Container } from 'react-bootstrap';
-import './HomePage.scss'
+import React from "react";
+import { FACE_LOGO } from "../../../../../utils/constants";
+import { Container } from "react-bootstrap";
+import "./HomePage.scss";
 
 export default class HomePage extends React.Component {
-
     render() {
         return (
-            <Container className='page-container'>
-                <img className="my_face" src={FACE_LOGO} alt='user'/>
-                <h3>Welcome to my page!</h3>
-                My name is Fernando Duarte and I'm a Software Developer from Portugal. 
-                <br></br>
-                In this webpage you can find a small overview of my progresses in the world of programming.
-                <br></br>
-                Feel free to explore further, and to hit me up using any of the contacts below.
+            <Container className="page-container">
+                <img className="my_face" src={FACE_LOGO} alt="user" />
+                <h2>Fernando Duarte</h2>
+                <h3>Senior Software Engineer</h3>
+                I’m a Senior Software Engineer specializing in backend
+                development, system modernization, and cloud-native solutions.
+                With expertise in .NET, Java, PHP, and cloud platforms like AWS
+                and Azure, I build efficient, scalable, and maintainable
+                software.
+                <p></p>
+                Driven by clean code, performance optimization, and Agile
+                practices, I craft solutions that align technology with business
+                goals. Let’s build something great.
             </Container>
         );
     }
