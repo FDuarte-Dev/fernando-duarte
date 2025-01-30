@@ -9,7 +9,10 @@ interface ProjectsCardProps {
 
 interface ProjectsCardState {}
 
-export default class ProjectsCard extends React.Component<ProjectsCardProps, ProjectsCardState> {
+export default class ProjectsCard extends React.Component<
+    ProjectsCardProps,
+    ProjectsCardState
+> {
     render() {
         let {
             project_name: company_name,
@@ -23,22 +26,20 @@ export default class ProjectsCard extends React.Component<ProjectsCardProps, Pro
         let { theme } = store.getState();
         return (
             <>
-                <Card 
-                    bg={theme} 
-                    text={ theme === 'light' ? 'dark' : 'white'} 
-                    border="info" 
-                    style={{ flex: 1, width: "90%" }}>
+                <Card
+                    bg={theme}
+                    text={theme === "light" ? "dark" : "white"}
+                    border="info"
+                    style={{ flex: 1, width: "90%" }}
+                >
                     <Card.Header>
                         <Container>
                             <Row>
                                 <Col>
-                                    <h4>
-                                        {company_name}
-                                    </h4>
+                                    <h4>{company_name}</h4>
                                     <h6>{location}</h6>
                                 </Col>
-                                <Col
-                                    style={{ alignSelf: "center" }}>
+                                <Col style={{ alignSelf: "center" }}>
                                     <h6>
                                         {start_date} - {end_date || "Ongoing"}
                                     </h6>
@@ -48,7 +49,16 @@ export default class ProjectsCard extends React.Component<ProjectsCardProps, Pro
                     </Card.Header>
                     <Card.Body>
                         {notable_tasks.map((task) => {
-                            return <Card.Text>-{task}</Card.Text>;
+                            return (
+                                <Card.Text
+                                    style={{
+                                        textAlign: "justify",
+                                        textAlignLast: "left",
+                                    }}
+                                >
+                                    -{task}
+                                </Card.Text>
+                            );
                         })}
                     </Card.Body>
                     <Card.Footer className="text-muted">

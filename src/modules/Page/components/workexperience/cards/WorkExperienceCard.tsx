@@ -10,7 +10,10 @@ interface WorkExperienceCardProps {
 
 interface WorkExperienceCardState {}
 
-export default class WorkExperienceCard extends React.Component<WorkExperienceCardProps, WorkExperienceCardState> {
+export default class WorkExperienceCard extends React.Component<
+    WorkExperienceCardProps,
+    WorkExperienceCardState
+> {
     render() {
         let {
             company_name,
@@ -22,16 +25,17 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
             notable_tasks,
             languages,
             technologies,
-            projects
+            projects,
         } = this.props.work;
         let { theme } = store.getState();
         return (
             <>
-                <Card 
-                    bg={theme} 
-                    text={ theme === 'light' ? 'dark' : 'white'} 
-                    border="info" 
-                    style={{ flex: 1, width: "100%" }}>
+                <Card
+                    bg={theme}
+                    text={theme === "light" ? "dark" : "white"}
+                    border="info"
+                    style={{ flex: 1, width: "100%" }}
+                >
                     <Card.Header>
                         <Container>
                             <Row>
@@ -58,20 +62,29 @@ export default class WorkExperienceCard extends React.Component<WorkExperienceCa
                     </Card.Header>
                     <Card.Body>
                         {notable_tasks.map((task) => {
-                            return <Card.Text>-{task}</Card.Text>;
+                            return (
+                                <Card.Text
+                                    style={{
+                                        textAlign: "justify",
+                                        textAlignLast: "left",
+                                    }}
+                                >
+                                    -{task}
+                                </Card.Text>
+                            );
                         })}
                     </Card.Body>
-                    {projects && <ProjectsDeck projects={projects}/>}
-                    { languages &&
+                    {projects && <ProjectsDeck projects={projects} />}
+                    {languages && (
                         <Card.Footer className="text-muted">
                             Languages: {languages.join(", ")}
                         </Card.Footer>
-                    }
-                    { technologies &&
+                    )}
+                    {technologies && (
                         <Card.Footer className="text-muted">
                             Tech stack: {technologies.join(", ")}
                         </Card.Footer>
-                    }
+                    )}
                 </Card>
                 <br></br>
             </>
