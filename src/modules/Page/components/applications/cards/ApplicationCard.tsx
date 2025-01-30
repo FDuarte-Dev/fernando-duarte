@@ -40,10 +40,10 @@ export default class ApplicationCard extends React.Component<
                                     </Row>
                                 </Col>
                                 <Col>
-                                    <Row >
+                                    <Row>
                                         <br></br>
                                     </Row>
-                                    <Row xs={1} >
+                                    <Row xs={1}>
                                         <h2>{name}</h2>
                                     </Row>
                                 </Col>
@@ -51,8 +51,12 @@ export default class ApplicationCard extends React.Component<
                         </Container>
                     </Card.Header>
                     <Card.Body>
-                        <Card.Text>{description}</Card.Text>
-                        <Button variant="link" href={html_url}>
+                        <Card.Text>
+                            {description}
+                            <br></br>
+                            Currently Unavailable!
+                        </Card.Text>
+                        <Button variant="link" href={html_url} disabled>
                             <img
                                 src={PLAY_STORE_BUTTON}
                                 alt="Play"
